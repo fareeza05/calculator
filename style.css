@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 1440px;
+    height: 1024px;
+    background: linear-gradient(180deg, #D3EAFF 0%, rgba(0, 59, 114, 0.48) 51.56%, #D3EAFF 100%);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1024px; /* height was set because align-items was not working without it */
+}
+
+.calculator {
+    width: 499px;
+    height: 693px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #D3EAFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 9px 12px rgba(255, 255, 255, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    
+
+}
+
+.screen-container {
+    margin-top:41px;
+    margin-left: 45px;
+    background-color:black;
+    width: 408px;
+    height: 116px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #240000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display:flex;
+    justify-content: end;
+    align-items: flex-end;
+    
+
+ 
+}
+
+.screen {
+    color:white;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-size: 64px;
+    color: #D3EAFF;
+    font-family: Metrophobic;
+
+}
+
+.buttons-container {
+    width: 408px;
+    display:flex;
+    flex-direction: column;
+    margin-top:31px;
+    margin-left: 45px;
+    justify-content: space-between;
+}
+
+button {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 49px 14px 0px rgba(255, 255, 255, 0.25) inset;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: #000;
+    font-family: Metrophobic;
+    font-size: 36px;
+    width: 89px;
+    height: 81px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #D3EAFF;
+    margin-top: 10px;
+    margin-left:7px;
+    border: none;
+
+
+
+}
+
+#evaluate {
+    width: 187px;
+}
+.onclick {
+box-shadow: 0px 4px 27px 8px #FFF inset;
+}

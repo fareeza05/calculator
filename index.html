@@ -6,40 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+      </style>
 </head>
 <body>
     <div class="main-container">
         <div class="calculator">
             <div class="screen-container">
             <div class="screen">
-                <p class="display-text">0</p>
+                <span id="firstOperand"></span>
+                <span id="operatorShow"></span>
+                <span id="secondOperand"></span>
+                <span id="result"></span>
+                <p>0</p>
             </div>
             </div>
 
             <div class="buttons-container">
+                <div class="row">
                 <button id="clear">AC</button>
                 <button id="delete">C</button>
-                <button id="remainder" >%</button>
-                <button id="divide">÷</button>
+                <button class="operator" >%</button>
+                <button class='operator'>÷</button>
+                </div>
 
-                <button id="7">7</button>
-                <button id="8">8</button>
-                <button id="9">9</button>
-                <button id="add">+</button>
+                <div class="row">
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="number">+</button>
+                </div>
 
-                <button id="4">4</button>
-                <button id="5">5</button>
-                <button id="6">6</button>
-                <button id="subtract">-</button>
+                <div class="row">
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator">-</button>
+                </div>
 
-                <button id="3">3</button>
-                <button id="2">2</button>
-                <button id="1">1</button>
-                <button id="multiply">×</button>
+                <div class="row">
+                <button class="number">3</button>
+                <button class="number">2</button>
+                <button class="number">1</button>
+                <button class="operator">×</button>
+                </div>
 
-                <button id="0">0</button>
+                <div class="row">
+                <button class="number">0</button>
                 <button id="decimal">.</button>
-                <button id="result">=</button>
+                <button id="evaluate">=</button>
+                </div>
 
             </div>
 
