@@ -95,3 +95,7 @@ button {
 .onclick {
 box-shadow: 0px 4px 27px 8px #FFF inset;
 }
+
+button:hover{
+    box-shadow: 0px 4px 27px 8px #FFF inset;
+}
