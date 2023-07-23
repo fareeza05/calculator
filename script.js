@@ -1,9 +1,9 @@
 
 class Calculator {
 
-    constructor(firstInput, secondInput){
-        this.firstInput = firstInput;
-        this.secondInput = secondInput;
+    constructor(firstOperand, secondOperand){
+        this.firstOperand = firstOperand;
+        this.secondOperand = secondOperand;
         this.clear();
     }
 
@@ -50,6 +50,7 @@ class Calculator {
     }
 
     compute() {
+        let answer 
         let a = parseFloat(this.firstInput);
         let b = parseFloat(this.secondInput);
         if(isNaN(a) || isNaN(b)){
@@ -140,7 +141,7 @@ console.log('secondOperand:', secondOperand);
 
 //create class + add listeners for buttons
 const calculator = new Calculator(firstOperand, secondOperand);
-})
+
 
 numberBtn.forEach( button =>{
     button.addEventListener('click', () =>{
@@ -175,5 +176,5 @@ pointBtn.addEventListener('click', button =>{
     calculator.addDecimal(button.innerText)
     calculator.updateDisplay()
 })
-
+})
 // add keyboard features
