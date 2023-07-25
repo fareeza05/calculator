@@ -22,17 +22,14 @@ class Calculator {
 
     addDecimal(decimal){
 
-        if(this.secondInput === ''){
-            this.secondInput = this.secondInput.toString() + '0' + decimal.toString();
-        } else {
-            this.secondInput = this.secondInput.toString() + decimal.toString();
+        console.log("addDecimal method called with:", decimal);
+        if (decimal === '.' && this.secondInput.includes('.')) {
+            console.log("Decimal already present, exiting early.");
+            return; // exit method early if the second input already contains a decimal
         }
-
-        if(decimal !== '.' || this.secondInput.includes('.')) {
-            return; //exit method early
-        } else {
+    
         this.secondInput = this.secondInput.toString() + decimal.toString();
-        }
+        console.log("New secondInput:", this.secondInput);
     }
 
 
@@ -173,7 +170,7 @@ DelBtn.addEventListener('click', button =>{
 })
 
 pointBtn.addEventListener('click', button =>{
-    calculator.addDecimal(button.innerText)
+    calculator.addDecimal('.')
     calculator.updateDisplay()
 })
 })
