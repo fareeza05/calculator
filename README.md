@@ -17,6 +17,7 @@ Live Website : https://fareeza05.github.io/calculator/
 ---
 * Add additional appealing features to the front end.
 * Add more animations to buttons upon click or hover.
+* Fix display for result of decimal operands, it currently exceeds the screen capacity.
 * More TBA...
 
 ## Concepts Learned
